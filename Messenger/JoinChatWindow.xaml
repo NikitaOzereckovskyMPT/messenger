@@ -1,0 +1,21 @@
+﻿<Window x:Class="Messenger.JoinChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Join Chat" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Введите ваше имя:" Margin="5"/>
+        <TextBox x:Name="UsernameBox" Grid.Row="1" Margin="5"/>
+
+        <TextBlock Grid.Row="2" Text="Введите IP-адрес сервера:" Margin="5"/>
+        <TextBox x:Name="IPAddressBox" Grid.Row="3" Margin="5"/>
+
+        <Button Content="Подключиться к чату" Grid.Row="4" Click="JoinChatButton_Click" Margin="5"/>
+    </Grid>
+</Window>
